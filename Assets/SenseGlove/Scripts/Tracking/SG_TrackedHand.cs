@@ -760,24 +760,25 @@ namespace SG
         /// <param name="deltaTime"></param>
         protected void UpdateHandTracking(float deltaTime)
         {
-            // Get the latest real hand pose.
-            // UpdateRealHandPose();
+            //Get the latest real hand pose.
+             UpdateRealHandPose();
 
 
-            // Update the latest collider pose - since the wrist position updates on Physics Step, it will have changed since the PhysicsUpdate.
-            //l_virtualPose = GetLatestColliderPose(l_realHandPose);
-            //SG_HandPoser3D.UpdatePoser(this.virtualHandPoser, l_virtualPose);
+            //Update the latest collider pose - since the wrist position updates on Physics Step, it will have changed since the PhysicsUpdate.
+           l_virtualPose = GetLatestColliderPose(l_realHandPose);
+            SG_HandPoser3D.UpdatePoser(this.virtualHandPoser, l_virtualPose);
 
-            // Update any layers that need to match the colliderPose exactly
-            // PassThrough Layer - Tracking only.
-           
-            // FFB colliders
-            //if (this.feedbackLayer != null && this.feedbackLayer.isActiveAndEnabled)
-            //{
-            //    this.feedbackLayer.UpdateColliders();
-            //}
+            ///Update any layers that need to match the colliderPose exactly
+             //PassThrough Layer -Tracking only.
 
-            //UpdateRenderPose();
+
+             ///FFB colliders
+            if (this.feedbackLayer != null && this.feedbackLayer.isActiveAndEnabled)
+            {
+                this.feedbackLayer.UpdateColliders();
+            }
+
+            UpdateRenderPose();
         }
 
 

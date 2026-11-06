@@ -601,8 +601,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 954507810}
-  - {fileID: 716322092}
   - {fileID: 1491291970}
+  - {fileID: 716322092}
   - {fileID: 1492830970}
   - {fileID: 1217878701}
   m_Father: {fileID: 563858513}
@@ -723,6 +723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 563858513}
   - component: {fileID: 563858512}
+  - component: {fileID: 563858514}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -762,6 +763,22 @@ Transform:
   - {fileID: 446407290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &563858514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563858511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaa2b1a3fd824943ada96ae0fe42cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SG_XR_SceneTrackingLinks
+  xrRig: {fileID: 563858513}
+  head: {fileID: 954507810}
+  leftHandTrackingDevice: {fileID: 1217878701}
+  rightHandTrackingDevice: {fileID: 1492830970}
 --- !u!1 &656582945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &716322092
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,6 +1375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114001878862178238, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: overrideWristLocation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114541258151201158, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: origin
       value: 
@@ -1369,6 +1390,10 @@ PrefabInstance:
     - target: {fileID: 114541258151201158, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: wristTrackingOffsets
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114710115657912056, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: overrideWristLocation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114741115281472756, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: origin
@@ -1629,8 +1654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrRig: {fileID: 563858513}
   head: {fileID: 954507810}
-  leftHandTrackingDevice: {fileID: 716322092}
-  rightHandTrackingDevice: {fileID: 1491291970}
+  leftHandTrackingDevice: {fileID: 1217878701}
+  rightHandTrackingDevice: {fileID: 1492830970}
 --- !u!4 &970389323
 Transform:
   m_ObjectHideFlags: 0
@@ -2606,7 +2631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1491291970
 Transform:
   m_ObjectHideFlags: 0
