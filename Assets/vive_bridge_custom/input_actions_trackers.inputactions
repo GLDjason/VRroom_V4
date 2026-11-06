@@ -13,7 +13,8 @@
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
                     "name": "Waistrotation",
@@ -22,7 +23,8 @@
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
                     "name": "R_leg_pos",
@@ -31,7 +33,8 @@
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
                     "name": "R_leg_rotation",
@@ -40,7 +43,8 @@
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
                     "name": "L_leg_pos",
@@ -49,7 +53,8 @@
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
                     "name": "L_leg_rotation",
@@ -58,43 +63,48 @@
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
-                    "name": "R_wrist_pos",
+                    "name": "R_elbow_pos",
                     "type": "Value",
                     "id": "d8546573-a63a-494d-8ba6-f2173f0b38cd",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
-                    "name": "L_wrist_pos1",
+                    "name": "L_elbow_pos1",
                     "type": "Value",
                     "id": "aafcaa3c-0c81-4941-9f02-9c20d01a0607",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
-                    "name": "R_wrist_rot",
+                    "name": "R_elbow_rot",
                     "type": "Value",
                     "id": "941db218-068b-4d8d-9002-1986423462d5",
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 },
                 {
-                    "name": "L_wrist_rot1",
+                    "name": "L_elbow_rot1",
                     "type": "Value",
                     "id": "6b4d848b-4f43-43cc-a328-fb9c98f1001f",
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": true,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -237,18 +247,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "R_wrist_pos",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f458e1f1-97e1-469e-8272-a19959eeff89",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "R_wrist_pos",
+                    "action": "R_elbow_pos",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -259,7 +258,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "L_wrist_pos1",
+                    "action": "L_elbow_pos1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -270,7 +269,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "R_wrist_rot",
+                    "action": "R_elbow_rot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -281,7 +280,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "L_wrist_rot1",
+                    "action": "L_elbow_rot1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
