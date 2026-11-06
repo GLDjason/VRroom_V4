@@ -683,8 +683,19 @@ MonoBehaviour:
   features:
   - {fileID: 8736661028334727731}
   - {fileID: 3598254934845347770}
+  - {fileID: 8498456813389781549}
+  - {fileID: 5927163599393097929}
   - {fileID: 1170704673688743257}
+  - {fileID: -4297366859275052099}
+  - {fileID: -1289640904418471123}
+  - {fileID: -3502233828752092057}
+  - {fileID: -786351026779558226}
+  - {fileID: -6849189457462392808}
   - {fileID: 5153017048313567732}
+  - {fileID: 8408040037790837989}
+  - {fileID: 6754979726560969609}
+  - {fileID: -154803387890602259}
+  - {fileID: 1719140474678883084}
   - {fileID: -8705318006256794946}
   - {fileID: 6481653220666705815}
   - {fileID: 7393116930172532905}
@@ -694,8 +705,11 @@ MonoBehaviour:
   - {fileID: 3344995148386438684}
   - {fileID: 6389727029650002286}
   - {fileID: -4166740740631445519}
+  - {fileID: 2895859103378422826}
+  - {fileID: -1302045026555808683}
   - {fileID: -8999059302058509960}
   - {fileID: -5212364890371797913}
+  - {fileID: -2535354532092351869}
   - {fileID: 3837512152752227827}
   - {fileID: 3566024783637146022}
   - {fileID: 3125651787552706407}
@@ -706,11 +720,13 @@ MonoBehaviour:
   - {fileID: -6300852659050339468}
   - {fileID: -4782912542820276973}
   - {fileID: 1109513913212486038}
+  - {fileID: -9108704039754328271}
   - {fileID: -500553951895718075}
   - {fileID: 8461216366325073885}
   - {fileID: -8385369577385903398}
   - {fileID: -2778858118241658710}
   - {fileID: 430188747721659633}
+  - {fileID: -7755087466778443782}
   - {fileID: 750856212347791325}
   - {fileID: 2821238428615573753}
   - {fileID: -7677771197093365762}
@@ -720,21 +736,6 @@ MonoBehaviour:
   - {fileID: 6854443372140345734}
   - {fileID: 8347051584439025853}
   - {fileID: 2684350569200705238}
-  - {fileID: -9108704039754328271}
-  - {fileID: -7755087466778443782}
-  - {fileID: -6849189457462392808}
-  - {fileID: -1289640904418471123}
-  - {fileID: 8498456813389781549}
-  - {fileID: 5927163599393097929}
-  - {fileID: -3502233828752092057}
-  - {fileID: 8408040037790837989}
-  - {fileID: -154803387890602259}
-  - {fileID: -786351026779558226}
-  - {fileID: -4297366859275052099}
-  - {fileID: 6754979726560969609}
-  - {fileID: 1719140474678883084}
-  - {fileID: -1302045026555808683}
-  - {fileID: 2895859103378422826}
   customLoaderName: 
   m_renderMode: 0
   m_latencyOptimization: 0
@@ -1054,6 +1055,28 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-camera
   openxrExtensionStrings: XR_ANDROID_passthrough_camera_state XR_ANDROID_light_estimation XR_ANDROID_global_passthrough_dimming
   company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+--- !u!114 &-2535354532092351869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410483533f4897b459eb01d117d7e356, type: 3}
+  m_Name: HTCViveTrackerProfile Standalone
+  m_EditorClassIdentifier: Assembly-CSharp::UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  m_enabled: 1
+  nameUi: HTC Vive Tracker Profile
+  version: 0.0.1
+  featureIdInternal: com.massive.openxr.feature.input.htcvivetracker
+  openxrExtensionStrings: XR_HTCX_vive_tracker_interaction
+  company: MASSIVE
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
